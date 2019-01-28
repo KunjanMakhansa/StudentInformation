@@ -1,0 +1,7 @@
+c:\users\mtech\source\repos\StudentInfo1\StudentInfo1\obj\Debug\StudentInfo1.csprojAssemblyReference.cache
+c:\users\mtech\source\repos\StudentInfo1\StudentInfo1\obj\Debug\StudentInfo1.csproj.CoreCompileInputs.cache
+c:\users\mtech\source\repos\StudentInfo1\StudentInfo1\bin\Debug\StudentInfo1.exe.config
+c:\users\mtech\source\repos\StudentInfo1\StudentInfo1\bin\Debug\StudentInfo1.exe
+c:\users\mtech\source\repos\StudentInfo1\StudentInfo1\bin\Debug\StudentInfo1.pdb
+c:\users\mtech\source\repos\StudentInfo1\StudentInfo1\obj\Debug\StudentInfo1.exe
+c:\users\mtech\source\repos\StudentInfo1\StudentInfo1\obj\Debug\StudentInfo1.pdb
