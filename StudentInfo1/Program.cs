@@ -18,37 +18,18 @@ namespace StudentInfo1
             do
             {
                 Console.WriteLine("Press c or x to continue and exit");
-                var ch = Convert.ToChar(Console.ReadKey().KeyChar);
+                char ch = ReadMethod();
 
                 switch (ch)
                 {
                     case 'x':
-
-                        if (list.Count > 0)
-                        {
-                            PrintData(list);
-                        }
                         Console.ReadLine();
                         Environment.Exit(0);
                         break;
 
                     case 'c':
 
-                        Console.WriteLine("Enter Student ID :");
-                        var i = Convert.ToInt32(Console.ReadLine());
-
-                        Console.WriteLine("Enter Student Name :");
-                        var name = Convert.ToString(Console.ReadLine());
-
-                        Console.WriteLine("Enter Math Marks " + name);
-                        var MathsMark = Convert.ToInt32(Console.ReadLine());
-
-                        Console.WriteLine("Enter Science Marks " + name);
-                        var ScienceMark = Convert.ToInt32(Console.ReadLine());
-
-                        var total = MathsMark + ScienceMark;
-                        StudentInfo studentInfo = new StudentInfo(i, name, MathsMark, ScienceMark);
-                        list.Add(studentInfo);
+                        DataProcess(list);
                         break;
 
                     default:
@@ -56,6 +37,29 @@ namespace StudentInfo1
                         break;
                 }
             } while (true);
+        }
+
+        private static char ReadMethod()
+        {
+            return Convert.ToChar(Console.ReadKey().KeyChar);
+        }
+
+        private static void DataProcess(List<StudentInfo> list)
+        {
+            Console.WriteLine("Enter Student ID :");
+            var i = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Student Name :");
+            var name = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter Math Marks " + name);
+            var MathsMark = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter Science Marks " + name);
+            var ScienceMark = Convert.ToInt32(Console.ReadLine());
+
+            StudentInfo studentInfo = new StudentInfo(i, name, MathsMark, ScienceMark);
+            list.Add(studentInfo);
         }
     }
 }
